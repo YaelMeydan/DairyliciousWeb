@@ -61,7 +61,6 @@
     --accent-950: hsl(102, 38%, 5%);
 
   }
-
 }
 
 .top-nav-style{
@@ -73,16 +72,18 @@
     justify-content: space-around;
     background-color: var(--background-600);
     
-
- 
   > h1 {
       font-weight: 900;
       font-size: 2.5rem;
       letter-spacing: 0.35em;
       font-style: italic;
       font-family: cursive;
-  }
-}
+ 
+   }
+        
+      }
+  
+
 
 .page-nav {
 background-color: var(--background-300);
@@ -98,7 +99,6 @@ cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
     text-decoration:none;
-    
 
 }
 }
@@ -109,6 +109,14 @@ border-color:black;
 border-radius: 20%;
 border-width: 0.15rem;
 cursor: pointer;
+
+  @media screen and (width < 73.75rem){
+    display: flex;
+    align-items: center;
+
+  > .info-buttons{ width: min(100%, 200px);
+  }
+   }
 }
 
 

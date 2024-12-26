@@ -97,6 +97,15 @@
   border-width: 0.15rem;
   cursor: pointer;
 }
+@media screen and (width < 73.75rem) {
+  .info-buttons {
+    display: flex;
+    align-items: center;
+  }
+  .info-buttons > .info-buttons {
+    width: min(100%, 200px);
+  }
+}
 
 .main-layout {
   line-height: 1.5rem;
