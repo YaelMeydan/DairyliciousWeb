@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @media (prefers-color-scheme: light) {
   :root {
     --text-50: hsl(54, 38%, 95%);
@@ -81,14 +80,14 @@
   border: 2px solid currentColor;
   font-size: 0.8rem;
   border: none;
+  cursor: pointer;
 }
-.page-nav a {
+.page-nav > a {
   color: var(--text-900);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  text-decoration:  none;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .info-buttons {
@@ -99,20 +98,74 @@
   cursor: pointer;
 }
 
-.header-style {
-  background: var(--text-200);
-}
-
-.header-text-style > p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  font-weight: 650;
-}
-
 .main-layout {
-  line-height: 1.5;
+  line-height: 1.5rem;
   color: #0d0d0d;
   background: var(--text-200);
+  max-width: 100vw;
+}
+
+.bottomnav {
+  display: flex;
+  justify-content: center;
+  margin-block-start: auto;
+  width: 100vw;
+  margin: 0 auto;
+}
+.bottomnav > .page-nav .awardimg {
+  flex: 33.33%;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  align-items: center;
+}
+.bottomnav > .page-nav {
+  height: auto;
+  margin: 5rem;
+  padding: 0.5rem;
+  border: 10px;
+  background-color: var(--background-100);
+  text-align: center;
+  align-content: center;
+  width: 12vw;
+  cursor: pointer;
+}
+.bottomnav > .page-nav > a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.bottomnav > .page-nav:hover {
+  scale: 1.2;
+  transition: scale 150ms;
+  background: var(--background-600);
+}
+.bottomnav .awardimg {
+  border-radius: 20px;
+  margin-bottom: 0.1rem;
+  width: 30vw;
+}
+
+.pagetitle {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 500;
+  padding: 1rem;
+  margin: 0.3rem auto;
+}
+
+.grid2col {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  height: 75vh;
+  overflow: hidden;
+}
+.grid2col > form {
+  grid-area: 1, 1, 2, 2;
+}
+.grid2col > img {
+  grid-area: 1, 2, 2, 3;
 }
 
 .footer {
