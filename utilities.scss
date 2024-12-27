@@ -71,6 +71,17 @@
     align-items: center; 
     justify-content: space-around;
     background-color: var(--background-600);
+    overflow-x: hidden;
+
+    
+    @media (width< 1180px) {
+       min-width: 100vw;
+      
+    
+
+    }
+      
+
     
   > h1 {
       font-weight: 900;
@@ -78,20 +89,32 @@
       letter-spacing: 0.35em;
       font-style: italic;
       font-family: cursive;
- 
-   }
+     
+      @media (width< 1000px) {
+        font-size: 2rem;
         
-      }
-  
+    }
+    @media (width< 650px) {
+      font-size: 1.5rem;
+      
+  }
+    
+   }
 
-
-.page-nav {
+        
+ >.page-nav {
 background-color: var(--background-300);
 border-radius: 0.5rem;
-border: 2px solid currentColor;
-font-size: 0.8rem;
 border: none;
 cursor: pointer;
+
+            @media (max-width: 650px) {
+              max-width: 12vw;
+              
+ 
+        
+           }
+
 
 > a{
     color: var(--text-900);
@@ -99,25 +122,35 @@ cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
     text-decoration:none;
+    text-align: center;
+   
 
-}
-}
-
-.info-buttons {
-background: none;
-border-color:black;
-border-radius: 20%;
-border-width: 0.15rem;
-cursor: pointer;
-
-  @media screen and (width < 73.75rem){
-    display: flex;
-    align-items: center;
-
-  > .info-buttons{ width: min(100%, 200px);
+    
+    @media (max-width: 650px) {
+      font-size: 0.8rem;
+     
+            
   }
+  @media (max-width: 560px) {
+  font-size: 0.5rem;
+ 
+  
+  }
+
+ 
+
+
+       }
    }
 }
+       .info-buttons {
+        background: none;
+        border-color:black;
+       border-radius: 20%;
+         border-width: 0.15rem;
+         cursor: pointer;
+           
+          }
 
 
 .main-layout {
@@ -125,14 +158,18 @@ line-height: 1.5rem;
 color: hsl(0deg 0% 5%);
 background: var(--text-200);
 max-width: 100vw;
+overflow-x: hidden;
+
 }
 
 .bottomnav{
 display: flex;
 justify-content: center;
 margin-block-start:auto;
-width: 90vw;
+width: 85vw;
 margin: 0 auto;
+max-width: 100vw;
+overflow-x: hidden;
 
 
  > .page-nav .awardimg{
@@ -146,8 +183,6 @@ margin: 0 auto;
  > .page-nav{
     height: auto;
     margin: 5rem;
-    padding: 0.5rem;
-    border: 10px;
     background-color:var(--background-100) ;
     text-align: center;
     align-content: center;

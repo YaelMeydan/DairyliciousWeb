@@ -65,6 +65,12 @@
   align-items: center;
   justify-content: space-around;
   background-color: var(--background-600);
+  overflow-x: hidden;
+}
+@media (width < 1180px) {
+  .top-nav-style {
+    min-width: 100vw;
+  }
 }
 .top-nav-style > h1 {
   font-weight: 900;
@@ -73,21 +79,44 @@
   font-style: italic;
   font-family: cursive;
 }
-
-.page-nav {
+@media (width < 1000px) {
+  .top-nav-style > h1 {
+    font-size: 2rem;
+  }
+}
+@media (width < 650px) {
+  .top-nav-style > h1 {
+    font-size: 1.5rem;
+  }
+}
+.top-nav-style > .page-nav {
   background-color: var(--background-300);
   border-radius: 0.5rem;
-  border: 2px solid currentColor;
-  font-size: 0.8rem;
   border: none;
   cursor: pointer;
 }
-.page-nav > a {
+@media (max-width: 650px) {
+  .top-nav-style > .page-nav {
+    max-width: 12vw;
+  }
+}
+.top-nav-style > .page-nav > a {
   color: var(--text-900);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
+  text-align: center;
+}
+@media (max-width: 650px) {
+  .top-nav-style > .page-nav > a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 560px) {
+  .top-nav-style > .page-nav > a {
+    font-size: 0.5rem;
+  }
 }
 
 .info-buttons {
@@ -97,29 +126,23 @@
   border-width: 0.15rem;
   cursor: pointer;
 }
-@media screen and (width < 73.75rem) {
-  .info-buttons {
-    display: flex;
-    align-items: center;
-  }
-  .info-buttons > .info-buttons {
-    width: min(100%, 200px);
-  }
-}
 
 .main-layout {
   line-height: 1.5rem;
   color: #0d0d0d;
   background: var(--text-200);
   max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .bottomnav {
   display: flex;
   justify-content: center;
   margin-block-start: auto;
-  width: 90vw;
+  width: 85vw;
   margin: 0 auto;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 .bottomnav > .page-nav .awardimg {
   flex: 33.33%;
@@ -130,8 +153,6 @@
 .bottomnav > .page-nav {
   height: auto;
   margin: 5rem;
-  padding: 0.5rem;
-  border: 10px;
   background-color: var(--background-100);
   text-align: center;
   align-content: center;
