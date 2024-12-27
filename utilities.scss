@@ -113,24 +113,20 @@ cursor: pointer;
            }
 
 
-> a{
+   > a{
     color: var(--text-900);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     text-decoration:none;
     text-align: center;
-   
-
     
     @media screen and  (width<= 650px) {
       font-size: 0.8rem;
       
        }
-  @media screen and  (max-width<= 560px) {
-  font-size: 0.5rem;
- 
-  
+     @media screen and  (max-width<= 560px) {
+      font-size: 0.5rem;
                    }
              }
          }
@@ -152,6 +148,37 @@ cursor: pointer;
            
           }
 
+      #address {
+            text-align:center;
+            padding: 40px;
+            font-size: 2.3rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 700;
+            background-color: var(--accent-200);
+            margin:auto;
+            height: 30vh;
+            width: 95vw;
+            border-radius: 15%;
+            line-height: 1;
+            align-content: center;
+
+          }
+
+          #phone {
+            text-align:center;
+            padding: 40px;
+            font-size: 2.3rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 700;
+            background-color: var(--accent-200);
+            margin:auto;
+            height: 30vh;
+            width: 95vw;
+            border-radius: 15%;
+            line-height: 1;
+            align-content: center;
+          }
+      
 
 .main-layout {
 line-height: 1.5rem;
