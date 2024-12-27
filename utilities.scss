@@ -131,14 +131,18 @@ cursor: pointer;
   font-size: 0.5rem;
  
   
-     }
-
- 
-
-
+                   }
              }
-      }
-   }
+         }
+       }
+
+    @media screen and (max-width: 1100px) {
+      span.fullString { display: none; }
+  }
+  @media screen and (min-width: 991px) {
+      span.part { display: none; }
+  }
+  
        .info-buttons {
         background: none;
         border-color:black;
@@ -243,4 +247,11 @@ border-radius: 0.5rem;
 font-size: 1rem;
 margin-top:auto;
 background-color: var(--background-600);
+
+  >button{
+    background-color: var(--background-300);
+  border-radius: 0.5rem;
+  border: 2px solid currentColor;
+  font-size: 0.8rem;
+  }
 }
