@@ -69,7 +69,7 @@
 }
 @media (width < 1180px) {
   .top-nav-style {
-    min-width: 100vw;
+    max-width: 100vw;
   }
 }
 .top-nav-style > h1 {
