@@ -4,15 +4,280 @@ body {
   flex-direction: column;
 }
 
-.navigation {
+.top-nav-style {
+  flex: 1;
   display: flex;
-  width: 100%;
+  margin-inline: auto;
+  height: 12vh;
+  align-items: center;
+  background-color: var(--background-600);
 }
-.navigation .title {
-  flex-grow: 1;
+.top-nav-style > h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: 0.35em;
+  font-style: italic;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  flex: 1;
   text-align: center;
-  padding: 0.5rem;
-  font-size: 1.5rem;
+}
+@media (max-width: 950px) {
+  .top-nav-style > h1 {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 900px) {
+  .top-nav-style > h1 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 850px) {
+  .top-nav-style > h1 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 800px) {
+  .top-nav-style > h1 {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 750px) {
+  .top-nav-style > h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .top-nav-style > h1 {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 650px) {
+  .top-nav-style > h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 600px) {
+  .top-nav-style > h1 {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 550px) {
+  .top-nav-style > h1 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .top-nav-style > h1 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 450px) {
+  .top-nav-style > h1 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 400px) {
+  .top-nav-style > h1 {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 350px) {
+  .top-nav-style > h1 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 300px) {
+  .top-nav-style > h1 {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 250px) {
+  .top-nav-style > h1 {
+    font-size: 0.3rem;
+  }
+}
+.top-nav-style .page-nav {
+  background-color: var(--background-300);
+  border-radius: 0.5rem;
+  border: 2px solid currentColor;
+  font-size: 0.8rem;
+  border: none;
+}
+.top-nav-style .page-nav a {
+  color: var(--text-900);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .top-nav-style .page-nav a {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 695px) {
+  .top-nav-style .page-nav a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 625px) {
+  .top-nav-style .page-nav a {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 605px) {
+  .top-nav-style .page-nav a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 585px) {
+  .top-nav-style .page-nav a {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 565px) {
+  .top-nav-style .page-nav a {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 535px) {
+  .top-nav-style .page-nav a {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 515px) {
+  .top-nav-style .page-nav a {
+    font-size: 0.4rem;
+  }
+}
+@media (max-width: 365px) {
+  .top-nav-style .page-nav a {
+    font-size: 0.3rem;
+  }
+}
+@media (max-width: 265px) {
+  .top-nav-style .page-nav a {
+    font-size: 0.2rem;
+  }
+}
+.top-nav-style .info-buttons {
+  background: none;
+  border-color: black;
+  border-radius: 20%;
+  border-width: 0.15rem;
+  cursor: pointer;
+}
+.top-nav-style .info-buttons img {
+  cursor: pointer;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  background-color: var(--text-200);
+}
+.main .top-main {
+  grid-area: 1/1/2/4;
+  font-size: 1.6rem;
+}
+@media (min-width: 1500px) {
+  .main .top-main {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 2000px) {
+  .main .top-main {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 2500px) {
+  .main .top-main {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 260px) {
+  .main .top-main {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 140px) {
+  .main .top-main {
+    font-size: 0.5rem;
+  }
+}
+.main .top-main p {
+  margin-top: 2rem;
+}
+.main .top-main h2 {
+  margin-top: 2rem;
+}
+.main .first-event-pargraph {
+  grid-area: 2/1/3/4;
+  margin: 1rem;
+  font-size: 1rem;
+}
+@media (min-width: 1500px) {
+  .main .first-event-pargraph {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 2000px) {
+  .main .first-event-pargraph {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 2500px) {
+  .main .first-event-pargraph {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 5000px) {
+  .main .first-event-pargraph {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 150px) {
+  .main .first-event-pargraph {
+    font-size: 0.5rem;
+  }
+}
+.main .information-paragraph {
+  grid-area: 2/1/3/4;
+  font-size: 1rem;
+}
+@media (min-width: 1500px) {
+  .main .information-paragraph {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 2000px) {
+  .main .information-paragraph {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 2500px) {
+  .main .information-paragraph {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 5000px) {
+  .main .information-paragraph {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 150px) {
+  .main .information-paragraph {
+    font-size: 0.5rem;
+  }
+}
+.main .img-1 {
+  grid-area: 3/1/5/4;
+  padding: 0.3rem;
 }
 
 .end {
@@ -27,4 +292,45 @@ body {
 }
 .end .footer p {
   font-size: 1rem;
+}
+@media (max-width: 470px) {
+  .end .footer {
+    font-size: 0.8rem;
+  }
+  .end .footer p, .end .footer a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 370px) {
+  .end .footer {
+    font-size: 0.6rem;
+    align-items: center;
+  }
+  .end .footer p, .end .footer a {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 290px) {
+  .end .footer {
+    font-size: 0.5rem;
+  }
+  .end .footer p, .end .footer a {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 250px) {
+  .end .footer {
+    font-size: 0.4rem;
+  }
+  .end .footer p, .end .footer a {
+    font-size: 0.4rem;
+  }
+}
+@media (max-width: 210px) {
+  .end .footer {
+    font-size: 0.2rem;
+  }
+  .end .footer p, .end .footer a {
+    font-size: 0.2rem;
+  }
 }
