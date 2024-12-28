@@ -6,17 +6,32 @@
     overflow: hidden;
     margin: 0 auto;
    padding: 1.5rem;
+
+   @media screen and (width<= 650px) {
+    padding: 1rem;
+   }
+
  
 
 }
 
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
       width:100vw;
       height: 15vh;
       padding: 1.2rem;
       border: none;
+      flex:1;
+
+      @media screen and (width<= 700px) {
+        padding: 0;
+        margin: 0;
+        justify-content: flex-start; 
+        height: 90px;
+        margin-inline: auto;  
+                     }
+
      
 
     > p{
@@ -29,6 +44,15 @@
          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
          text-align: center;
          line-height: 2rem;
+
+         @media screen and (width<= 700px) {
+            font-size: 1.4rem;
+             }
+           @media screen and (width<= 560px) {
+            font-size: 1.1rem;
+            padding: 0;
+            
+                         }
          
        
 }
