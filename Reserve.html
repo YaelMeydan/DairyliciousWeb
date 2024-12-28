@@ -11,7 +11,12 @@
 </header>
 <nav class="[ top-nav-style ] " >
     <figure class=" [ page-nav ]">
-        <a href="index.html" > Go to home page </a>
+        <a href="index.html" >
+            <th runat="server" colspan="1"> 
+                <span class="fullString2"> Go to home page</span>
+                <span class="part2"> home page</span>  
+                <th>         
+        </a>
     </figure>
     <h1> Dairylicious </h1>
     <p popover id="phone">Call us: 058-5808033</p>
@@ -27,7 +32,8 @@
 <body class=" [ main-layout ] " >
     <h2 class="pagetitle">Reserve a table / Contact us:</h2>
     <article class="grid2col">
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <article class="contactform">
+        <form  action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="f995202a-6259-4b3c-8a3c-eebe4c0935dc">
           <label for="fullname">Your full Name:</label>
           <input type="text" id="fullname" name="fullname" placeholder="Write here your full name.." required>
@@ -40,6 +46,7 @@
       
           <button type="submit" value="Submit">Submit</button>
         </form>
+    </article>
         <img src="photos/restaurantday.jpeg" alt="photo of the restaurant day" style="width: 30vw;"/>
     </article>
 </body>
