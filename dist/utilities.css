@@ -288,6 +288,11 @@
 .contactform {
   font-family: Arial, Helvetica, sans-serif;
 }
+@media screen and (width <= 430px) {
+  .contactform {
+    width: 100vw;
+  }
+}
 .contactform > form {
   border-radius: 5px;
   background-color: var(--background-500);
@@ -295,7 +300,8 @@
 }
 @media screen and (width <= 430px) {
   .contactform > form {
-    width: 100%;
+    width: 90vw;
+    font-size: 0.8rem;
   }
 }
 .contactform > input[type=text], .contactform select, .contactform textarea {
@@ -307,6 +313,11 @@
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+@media screen and (width <= 430px) {
+  .contactform #subject {
+    font-size: 0.8rem;
+  }
 }
 .contactform > input[type=submit] {
   background-color: #04AA6D;
