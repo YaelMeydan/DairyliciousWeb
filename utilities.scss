@@ -279,6 +279,7 @@ font-weight: 500;
 padding: 1rem;
 margin: 0.3rem auto;
 
+
 }
 
 .grid2col{
@@ -286,6 +287,16 @@ display: grid;
 grid-template: 1fr / 1fr 1fr;
 height:75vh;
 overflow: hidden;
+column-gap: 1rem;
+margin: 1rem;
+
+@media screen and (width <=430px){
+  display: flex;
+  height: 70vh;
+}
+
+  
+}
 
 > form{
   grid-area: 1 , 1 , 2 , 2;
@@ -295,7 +306,7 @@ overflow: hidden;
   grid-area: 1 , 2 , 2 , 3 ;
 }
 
-}
+
 
 .contactform {
   font-family: Arial, Helvetica, sans-serif;
@@ -304,9 +315,52 @@ overflow: hidden;
     border-radius: 5px;
     background-color: var(--background-500);
     padding: 20px;
-  }
-  
 
+    @media screen and (width <=430px){
+      width: 100%;
+    }
+
+
+  }
+
+
+>input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+ 
+>input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.submit:hover{
+  background-color: var(--background-200);
+  scale: 1.5;
+  transition: scale 150ms;
+
+}
+
+}
+
+.contactsimg{
+  width: 45vw;
+
+  @media screen and (width <430px){
+    display: none;
+  }
+ 
 }
 
 .footer{
