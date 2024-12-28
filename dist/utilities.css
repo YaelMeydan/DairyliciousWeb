@@ -326,7 +326,7 @@
 .contactsimg {
   width: 45vw;
 }
-@media screen and (width <= 430px) {
+@media screen and (width < 430px) {
   .contactsimg {
     display: none;
   }
