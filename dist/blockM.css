@@ -13,23 +13,3 @@ button a {
   text-decoration: none;
   cursor: pointer;
 }
-@media (max-width: 650px) {
-  button a {
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 560px) {
-  button a {
-    font-size: 0.5rem;
-  }
-}
-@media (max-width: 490px) {
-  button a {
-    font-size: 0.4rem;
-  }
-}
-@media (max-width: 340px) {
-  button a {
-    font-size: 0.2rem;
-  }
-}
