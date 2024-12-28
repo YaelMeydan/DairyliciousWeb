@@ -227,6 +227,7 @@ body {
 }
 .main .top-main {
   font-size: 1.6rem;
+  font-weight: 500;
 }
 @media (min-width: 1500px) {
   .main .top-main {
@@ -287,20 +288,16 @@ body {
 }
 .main .information-paragraph {
   font-size: 2rem;
-}
-@media (min-width: 1500px) {
-  .main .information-paragraph {
-    font-size: 1.4rem;
-  }
+  font-weight: 200;
 }
 @media (min-width: 2000px) {
   .main .information-paragraph {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
 }
 @media (min-width: 2500px) {
   .main .information-paragraph {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
   }
 }
 @media (min-width: 5000px) {
