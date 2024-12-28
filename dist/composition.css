@@ -1,3 +1,131 @@
+.top-nav-style {
+  flex: 1;
+  display: flex;
+  margin-inline: auto;
+  height: 12vh;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--background-600);
+  overflow-x: hidden;
+}
+@media screen and (width <= 1180px) {
+  .top-nav-style {
+    max-width: 100vw;
+  }
+}
+.top-nav-style > h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: 0.35em;
+  font-style: italic;
+  font-family: cursive;
+}
+@media screen and (width <= 1000px) {
+  .top-nav-style > h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (width <= 650px) {
+  .top-nav-style > h1 {
+    font-size: 1.5rem;
+  }
+}
+.top-nav-style > .page-nav {
+  background-color: var(--background-300);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (width <= 650px) {
+  .top-nav-style > .page-nav {
+    max-width: 12vw;
+  }
+}
+.top-nav-style > .page-nav > a {
+  color: var(--text-900);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+@media screen and (width <= 650px) {
+  .top-nav-style > .page-nav > a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width <= 560px) {
+  .top-nav-style > .page-nav > a {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  span.fullString {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  span.part {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  span.fullString2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  span.part2 {
+    display: none;
+  }
+}
+.info-buttons {
+  background: none;
+  border-color: black;
+  border-radius: 20%;
+  border-width: 0.15rem;
+  cursor: pointer;
+}
+
+#address {
+  text-align: center;
+  padding: 40px;
+  font-size: 2.3rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  background-color: var(--accent-200);
+  margin: auto;
+  height: 30vh;
+  width: 95vw;
+  border-radius: 15%;
+  line-height: 1;
+  align-content: center;
+}
+
+#phone {
+  text-align: center;
+  padding: 40px;
+  font-size: 2.3rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  background-color: var(--accent-200);
+  margin: auto;
+  height: 30vh;
+  width: 95vw;
+  border-radius: 15%;
+  line-height: 1;
+  align-content: center;
+}
+
+.main-layout {
+  line-height: 1.5rem;
+  color: #0d0d0d;
+  background: var(--text-200);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 .header-layout {
   max-height: 115vh;
   max-width: 100vw;
