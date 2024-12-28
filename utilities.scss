@@ -357,25 +357,63 @@ margin: 1rem;
 .contactsimg{
   width: 45vw;
 
-  @media screen and (width <430px){
+  @media screen and (width < 430px){
     display: none;
   }
  
 }
 
 .footer{
-display: flex;
-justify-content: space-between;
-border: 2px solid black;
-border-radius: 0.5rem;
-font-size: 1rem;
-margin-top:auto;
-background-color: var(--background-600);
-
-  >button{
-    background-color: var(--background-300);
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
   border-radius: 0.5rem;
-  border: 2px solid currentColor;
-  font-size: 0.8rem;
-  }
+  font-size: 1rem;
+  margin-top:auto;
+  background-color: var(--background-600);
+
+  
+  >p{
+    font-size: 1rem;
 }
+  
+    >button{
+      background-color: var(--background-300);
+    border-radius: 0.5rem;
+    border: 2px solid currentColor;
+    font-size: 0.8rem;
+    }
+  
+    @media (max-width: 470px) {
+      font-size: 0.8rem;
+      p, a{
+          font-size: 0.8rem;
+      }
+  }
+  
+  @media (max-width: 370px) {
+      font-size: 0.6rem;
+      align-items: center;
+      p, a{
+          font-size: 0.6rem;
+      }
+  }
+  @media (max-width: 290px) {
+      font-size: 0.5rem;
+      p, a{
+          font-size: 0.5rem;
+      }
+  }
+  @media (max-width: 250px) {
+      font-size: 0.4rem;
+      p, a{
+          font-size: 0.4rem;
+      }
+  }
+  @media (max-width: 210px) {
+      font-size: 0.2rem;
+      p, a{
+          font-size: 0.2rem;
+      }
+  }
+  }
